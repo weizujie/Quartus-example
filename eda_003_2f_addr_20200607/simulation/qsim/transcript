@@ -1,0 +1,44 @@
+# do m_faddr.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module m_faddr8
+# 
+# Top level modules:
+# 	m_faddr8
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module m_faddr8_vlg_sample_tst
+# -- Compiling module m_faddr8_vlg_check_tst
+# -- Compiling module m_faddr8_vlg_vec_tst
+# 
+# Top level modules:
+# 	m_faddr8_vlg_vec_tst
+# vsim -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.m_faddr8_vlg_vec_tst 
+# Loading work.m_faddr8_vlg_vec_tst
+# Loading work.m_faddr8
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading work.m_faddr8_vlg_sample_tst
+# Loading work.m_faddr8_vlg_check_tst
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from m_faddr_v.sdo
+# Loading timing data from m_faddr_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /m_faddr8_vlg_vec_tst File: Waveform1.vwf.vt
+# ERROR! Vector Mismatch for output port SUM[1] :: @time = 20000000.000 ps
+#      Expected value = 00000000
+#      Real value = 00000010
+# ERROR! Vector Mismatch for output port SUM[2] :: @time = 30000000.000 ps
+#      Expected value = 00000000
+#      Real value = 00000100
+# ERROR! Vector Mismatch for output port SUM[3] :: @time = 50000000.000 ps
+#      Expected value = 00000000
+#      Real value = 00001000
+# ERROR! Vector Mismatch for output port SUM[4] :: @time = 90000000.000 ps
+#      Expected value = 00000000
+#      Real value = 00010000
+#           4 mismatched vectors : Simulation failed !
+# ** Note: $finish    : Waveform1.vwf.vt(313)
+#    Time: 100 us  Iteration: 0  Instance: /m_faddr8_vlg_vec_tst/tb_out

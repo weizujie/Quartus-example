@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, D:/Code/QuartusProjects/eda_001_and2_20200524/my_and2.bdf
+source_file = 1, D:/Code/QuartusProjects/eda_001_and2_20200524/Waveform.vwf
+source_file = 1, Waveform1.vwf
+source_file = 1, D:/Code/QuartusProjects/eda_001_and2_20200524/db/my_and2.cbx.xml
+design_name = my_and2
+instance = comp, \output_3~output , output_3~output, my_and2, 1
+instance = comp, \input1_1~input , input1_1~input, my_and2, 1
+instance = comp, \input2_2~input , input2_2~input, my_and2, 1

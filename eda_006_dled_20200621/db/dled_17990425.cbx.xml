@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="dled_17990425">
+		<CBX_INST_ENTRY INSTANCE_NAME="|dled_17990425|cnt100k:inst|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_dcj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|dled_17990425|cnt8:inst1|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_9ph.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

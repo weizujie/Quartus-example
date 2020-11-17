@@ -1,0 +1,32 @@
+module cnt24(clk, en, rst, cnt, co);
+input clk, en, rst;
+output[7:0] cnt;
+output co;
+reg[7:0] cnt;
+reg co;
+
+always@(posedge clk or negedge rst)
+begin
+	if (!rst)
+	begin
+		cnt<=8'b00100011;
+		co<=1'b0;
+	end
+	else
+	begin
+		if(en)
+		begin
+			if(cnt==4'b1001)
+			begin
+				cnt<=4'b0000;
+				co<=1'b1;
+			end
+			else
+			begin
+				cnt<=cnt+1'b1;
+				co<=1'b0;
+			end
+		end
+	end
+end
+endmodule

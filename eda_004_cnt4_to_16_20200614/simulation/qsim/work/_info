@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Code\QuartusProjects\eda_004_cnt4_to_16_20200614\simulation\qsim
+vcnt4_to_16
+Z1 !s100 _8zOMmAGgaSj47]8R<>;_3
+Z2 Ief0kVGJ6i34Uoing8AiOf2
+Z3 V496hSBa;4VEFBoAk0Gi=O0
+Z4 dD:\Code\QuartusProjects\eda_004_cnt4_to_16_20200614\simulation\qsim
+Z5 w1592278027
+Z6 8cnt4_to_16.vo
+Z7 Fcnt4_to_16.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|cnt4_to_16.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1592278028.536000
+Z12 !s107 cnt4_to_16.vo|
+!s101 -O0
+vcnt4_to_16_vlg_check_tst
+!i10b 1
+Z13 !s100 Tdh;R15`LK;<2O[ma]^AI3
+Z14 IMZeYM44bU]1zdgLQzRH<]3
+Z15 VakXi_h]JTNMfmWW=;WJT91
+R4
+Z16 w1592278024
+Z17 8Waveform.vwf.vt
+Z18 FWaveform.vwf.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z19 !s108 1592278028.617000
+Z20 !s107 Waveform.vwf.vt|
+Z21 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R10
+vcnt4_to_16_vlg_sample_tst
+!i10b 1
+Z22 !s100 2EBY>@TbBRj0nZAg<OG3d1
+Z23 I9P7XAnQP1F??ijKcOAG8T1
+Z24 V`MaQ5ObzJAifSI3HH47iZ0
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vcnt4_to_16_vlg_vec_tst
+!i10b 1
+!s100 6>GRI;e_Uf8N8n`UXL3_X0
+Id9oo5KAGIZ9VTUQ^KNTg@0
+Z25 VI:BHmT;>V;R5FiQUB7WcB0
+R4
+R16
+R17
+R18
+Z26 L0 201
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10

@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Code\QuartusProjects\eda_002_addrtest_20200531\simulation\qsim
+vfull_addr
+Z1 IoaTDRCCzOU_E@TRAOHknm3
+Z2 VaaW>699I>@V@4kIbILf8n3
+Z3 dD:\Code\QuartusProjects\eda_002_full_addr_20200531\simulation\qsim
+Z4 w1591249328
+Z5 8full_addr.vo
+Z6 Ffull_addr.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|full_addr.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 Yc@fTA?R35TQalE]Q[Nna2
+!s85 0
+Z11 !s108 1591249328.963000
+Z12 !s107 full_addr.vo|
+!s101 -O0
+vfull_addr_vlg_check_tst
+!i10b 1
+Z13 !s100 2IQ7<QiLcFa>oZMRhcKJZ0
+Z14 I:7Ma_Zg>D2S>C6?>]5UfQ1
+Z15 Vh?E`9f``lFW:[QifnUdOf3
+R3
+Z16 w1591249326
+Z17 8full_addr.vwf.vt
+Z18 Ffull_addr.vwf.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z19 !s108 1591249329.014000
+Z20 !s107 full_addr.vwf.vt|
+Z21 !s90 -work|work|full_addr.vwf.vt|
+!s101 -O0
+R9
+vfull_addr_vlg_sample_tst
+!i10b 1
+Z22 !s100 Jbj^F6ieLDUjg<5cL?H<n3
+Z23 If8O<U58Z_=Q6Q@R5h>1W30
+Z24 VTlJzIg=R;Q>_k8B<U_Io=0
+R3
+R16
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+vfull_addr_vlg_vec_tst
+!i10b 1
+Z25 !s100 f<J_@jo5L_M>ZEAaMRKgl1
+Z26 IZYE@aD09I_?5BU<eBBc^R3
+Z27 VG;CgB;G]D@:FJjZehS<>_1
+R3
+R16
+R17
+R18
+Z28 L0 183
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9

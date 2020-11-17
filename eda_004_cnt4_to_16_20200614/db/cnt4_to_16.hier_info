@@ -1,0 +1,12 @@
+|cnt4_to_16
+clk => co~reg0.CLK
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+rst => co~reg0.ACLR
+rst => q[0]~reg0.ACLR
+rst => q[1]~reg0.ACLR
+co << co~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[0] << q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] << q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

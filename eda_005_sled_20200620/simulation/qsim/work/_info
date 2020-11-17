@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Code\QuartusProjects\eda_005_sled_20200620\simulation\qsim
+vsled
+Z1 I[ofoBGT1?2AMGI_2OS9<T1
+Z2 VVDG3f=N^3a@V=7KB3;jO]3
+Z3 dD:\Code\QuartusProjects\eda_005_sled_20200620\simulation\qsim
+Z4 w1592616612
+Z5 8sled_17990425.vo
+Z6 Fsled_17990425.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 bnTdQjNUnD6`T@;`0Ke]f2
+!s85 0
+Z10 !s108 1592616614.032000
+Z11 !s107 sled_17990425.vo|
+Z12 !s90 -work|work|sled_17990425.vo|
+!s101 -O0
+vsled_vlg_check_tst
+!i10b 1
+!s100 U9;EiQbzoQATeA`gRYH>M2
+IbU?@J2=Bl3mF0E>kY<X;11
+Vh_b2X7;jf51[giR0PW<QV2
+R3
+Z13 w1592616611
+Z14 8Waveform.vwf.vt
+Z15 FWaveform.vwf.vt
+L0 57
+R7
+r1
+!s85 0
+31
+Z16 !s108 1592616614.124000
+Z17 !s107 Waveform.vwf.vt|
+Z18 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R8
+vsled_vlg_sample_tst
+!i10b 1
+!s100 XXQ;C<gB^J;f_zFzI`O]J1
+IakTcenH9m``Tb=Zo2844C2
+VS8bI_^F4>azTTON]LB26I3
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vsled_vlg_vec_tst
+!i10b 1
+!s100 iAXh<z>0DodgUkLl0:l<?3
+IfACV8g6;OG_]8iVP3dlEF1
+VZ;M3e8hWT=DIjh30n=cV>2
+R3
+R13
+R14
+R15
+L0 455
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8

@@ -1,0 +1,3 @@
+module tonetaba(index, cnt_start, seg7, seg8);
+
+endmodule

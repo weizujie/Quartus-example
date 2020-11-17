@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="clock_17990425">
+		<CBX_INST_ENTRY INSTANCE_NAME="|clock|C10:inst8|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_nf6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|clock|C10_2:inst9|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_nf6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|clock|C11:inst10|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_of6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|clock|MUX2_1:inst11|lpm_mux:LPM_MUX_component" CBX_FILE_NAME="mux_arc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

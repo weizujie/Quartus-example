@@ -1,0 +1,37 @@
+|cnt10
+clk => co~reg0.CLK
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+rst => co~reg0.ACLR
+rst => q[0]~reg0.ACLR
+rst => q[1]~reg0.ACLR
+rst => q[2]~reg0.ACLR
+rst => q[3]~reg0.ACLR
+en => co~reg0.ENA
+en => q[3]~reg0.ENA
+en => q[2]~reg0.ENA
+en => q[1]~reg0.ENA
+en => q[0]~reg0.ENA
+updown => q.OUTPUTSELECT
+updown => q.OUTPUTSELECT
+updown => q.OUTPUTSELECT
+updown => q.OUTPUTSELECT
+updown => co.OUTPUTSELECT
+load => q.OUTPUTSELECT
+load => q.OUTPUTSELECT
+load => q.OUTPUTSELECT
+load => q.OUTPUTSELECT
+load => co.OUTPUTSELECT
+din[0] => q.DATAB
+din[1] => q.DATAB
+din[2] => q.DATAB
+din[3] => q.DATAB
+co << co~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[0] << q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] << q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] << q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] << q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

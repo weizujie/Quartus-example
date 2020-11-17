@@ -1,0 +1,26 @@
+|full_addr
+CO_7 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A_1 => half_addr:inst.A
+B_2 => half_addr:inst.B
+CIN_3 => half_addr:inst1.B
+SUM_10 <= half_addr:inst1.SUM
+
+
+|full_addr|half_addr:inst1
+SUM <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst1.IN1
+CO <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_addr|half_addr:inst
+SUM <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst1.IN1
+CO <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+

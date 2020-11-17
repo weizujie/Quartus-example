@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, D:/Code/QuartusProjects/eda_002_addrtest_20200531/half_addr.bdf
+source_file = 1, D:/Code/QuartusProjects/eda_002_addrtest_20200531/full_addr.bdf
+source_file = 1, D:/Code/QuartusProjects/eda_002_addrtest_20200531/db/full_addr.cbx.xml
+design_name = full_addr
+instance = comp, \CO_7~output\, CO_7~output, full_addr, 1
+instance = comp, \SUM_10~output\, SUM_10~output, full_addr, 1
+instance = comp, \B_2~input\, B_2~input, full_addr, 1
+instance = comp, \A_1~input\, A_1~input, full_addr, 1
+instance = comp, \CIN_3~input\, CIN_3~input, full_addr, 1
+instance = comp, \inst2~0\, inst2~0, full_addr, 1
+instance = comp, \inst1|inst~0\, inst1|inst~0, full_addr, 1

@@ -1,0 +1,483 @@
+Analysis & Synthesis report for clock_17990425
+Sat Jul 04 08:52:52 2020
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis IP Cores Summary
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: int_div:inst13
+ 13. Parameter Settings for User Entity Instance: int_div:inst12
+ 14. Parameter Settings for User Entity Instance: C10_2:inst9|lpm_constant:LPM_CONSTANT_component
+ 15. Parameter Settings for User Entity Instance: C11:inst10|lpm_constant:LPM_CONSTANT_component
+ 16. Parameter Settings for User Entity Instance: MUX2_1:inst11|lpm_mux:LPM_MUX_component
+ 17. Parameter Settings for User Entity Instance: C10:inst8|lpm_constant:LPM_CONSTANT_component
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sat Jul 04 08:52:52 2020       ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
+; Revision Name                      ; clock_17990425                              ;
+; Top-level Entity Name              ; clock                                       ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 140                                         ;
+;     Total combinational functions  ; 140                                         ;
+;     Dedicated logic registers      ; 60                                          ;
+; Total registers                    ; 60                                          ;
+; Total pins                         ; 19                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE10E22C8       ;                    ;
+; Top-level entity name                                                      ; clock              ; clock_17990425     ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                              ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                    ; Library ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+---------+
+; cnt10.v                          ; yes             ; User Verilog HDL File              ; D:/Code/QuartusProjects/eda_007_clock_20200704/cnt10.v          ;         ;
+; cnt6.v                           ; yes             ; User Verilog HDL File              ; D:/Code/QuartusProjects/eda_007_clock_20200704/cnt6.v           ;         ;
+; clock.bdf                        ; yes             ; User Block Diagram/Schematic File  ; D:/Code/QuartusProjects/eda_007_clock_20200704/clock.bdf        ;         ;
+; cnt24.v                          ; yes             ; User Verilog HDL File              ; D:/Code/QuartusProjects/eda_007_clock_20200704/cnt24.v          ;         ;
+; scanled.v                        ; yes             ; User Verilog HDL File              ; D:/Code/QuartusProjects/eda_007_clock_20200704/scanled.v        ;         ;
+; decode.v                         ; yes             ; User Verilog HDL File              ; D:/Code/QuartusProjects/eda_007_clock_20200704/decode.v         ;         ;
+; cnt8.v                           ; yes             ; User Verilog HDL File              ; D:/Code/QuartusProjects/eda_007_clock_20200704/cnt8.v           ;         ;
+; C10.v                            ; yes             ; User Wizard-Generated File         ; D:/Code/QuartusProjects/eda_007_clock_20200704/C10.v            ;         ;
+; C10_2.v                          ; yes             ; User Wizard-Generated File         ; D:/Code/QuartusProjects/eda_007_clock_20200704/C10_2.v          ;         ;
+; C11.v                            ; yes             ; User Wizard-Generated File         ; D:/Code/QuartusProjects/eda_007_clock_20200704/C11.v            ;         ;
+; MUX2_1.v                         ; yes             ; User Wizard-Generated File         ; D:/Code/QuartusProjects/eda_007_clock_20200704/MUX2_1.v         ;         ;
+; int_div.v                        ; yes             ; User Verilog HDL File              ; D:/Code/QuartusProjects/eda_007_clock_20200704/int_div.v        ;         ;
+; lpm_constant.tdf                 ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_constant.tdf ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_mux.tdf      ;         ;
+; aglobal131.inc                   ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/aglobal131.inc   ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/muxlut.inc       ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/bypassff.inc     ;         ;
+; altshift.inc                     ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/altshift.inc     ;         ;
+; db/mux_arc.tdf                   ; yes             ; Auto-Generated Megafunction        ; D:/Code/QuartusProjects/eda_007_clock_20200704/db/mux_arc.tdf   ;         ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 140       ;
+;                                             ;           ;
+; Total combinational functions               ; 140       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 59        ;
+;     -- 3 input functions                    ; 23        ;
+;     -- <=2 input functions                  ; 58        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 104       ;
+;     -- arithmetic mode                      ; 36        ;
+;                                             ;           ;
+; Total registers                             ; 60        ;
+;     -- Dedicated logic registers            ; 60        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 19        ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+; Maximum fan-out node                        ; RST~input ;
+; Maximum fan-out                             ; 28        ;
+; Total fan-out                               ; 617       ;
+; Average fan-out                             ; 2.59      ;
++---------------------------------------------+-----------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                           ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name   ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------+--------------+
+; |clock                     ; 140 (1)           ; 60 (1)       ; 0           ; 0            ; 0       ; 0         ; 19   ; 0            ; |clock                ; work         ;
+;    |cnt10:inst2|           ; 5 (5)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock|cnt10:inst2    ; work         ;
+;    |cnt10:inst|            ; 5 (5)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock|cnt10:inst     ; work         ;
+;    |cnt24:inst4|           ; 27 (27)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock|cnt24:inst4    ; work         ;
+;    |cnt6:inst1|            ; 6 (6)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock|cnt6:inst1     ; work         ;
+;    |cnt6:inst3|            ; 6 (6)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock|cnt6:inst3     ; work         ;
+;    |cnt8:inst7|            ; 3 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock|cnt8:inst7     ; work         ;
+;    |decode:inst6|          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock|decode:inst6   ; work         ;
+;    |int_div:inst12|        ; 32 (32)           ; 19 (19)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock|int_div:inst12 ; work         ;
+;    |int_div:inst13|        ; 17 (17)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock|int_div:inst13 ; work         ;
+;    |scanled:inst5|         ; 31 (31)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock|scanled:inst5  ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                          ;
++--------+--------------+---------+--------------+--------------+----------------------+---------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance      ; IP Include File                                         ;
++--------+--------------+---------+--------------+--------------+----------------------+---------------------------------------------------------+
+; Altera ; LPM_CONSTANT ; 13.1    ; N/A          ; N/A          ; |clock|C10:inst8     ; D:/Code/QuartusProjects/eda_007_clock_20200704/C10.v    ;
+; Altera ; LPM_CONSTANT ; 13.1    ; N/A          ; N/A          ; |clock|C10_2:inst9   ; D:/Code/QuartusProjects/eda_007_clock_20200704/C10_2.v  ;
+; Altera ; LPM_CONSTANT ; 13.1    ; N/A          ; N/A          ; |clock|C11:inst10    ; D:/Code/QuartusProjects/eda_007_clock_20200704/C11.v    ;
+; Altera ; LPM_MUX      ; 13.1    ; N/A          ; N/A          ; |clock|MUX2_1:inst11 ; D:/Code/QuartusProjects/eda_007_clock_20200704/MUX2_1.v ;
++--------+--------------+---------+--------------+--------------+----------------------+---------------------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Registers Removed During Synthesis                                    ;
++---------------------------------------+-------------------------------+
+; Register name                         ; Reason for Removal            ;
++---------------------------------------+-------------------------------+
+; int_div:inst13|counter[0]             ; Merged with cnt8:inst7|cnt[0] ;
+; Total Number of Removed Registers = 1 ;                               ;
++---------------------------------------+-------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 60    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 28    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 24    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |clock|cnt24:inst4|cnt[7]  ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |clock|scanled:inst5|Mux3  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: int_div:inst13 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; F_DIV_WIDTH    ; 8     ; Unsigned Integer                   ;
+; F_DIV          ; 240   ; Unsigned Integer                   ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: int_div:inst12 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; F_DIV_WIDTH    ; 17    ; Unsigned Integer                   ;
+; F_DIV          ; 10000 ; Unsigned Integer                   ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: C10_2:inst9|lpm_constant:LPM_CONSTANT_component ;
++--------------------+------------------+------------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                 ;
++--------------------+------------------+------------------------------------------------------+
+; LPM_WIDTH          ; 4                ; Signed Integer                                       ;
+; LPM_CVALUE         ; 10               ; Signed Integer                                       ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                              ;
+; CBXI_PARAMETER     ; lpm_constant_nf6 ; Untyped                                              ;
++--------------------+------------------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: C11:inst10|lpm_constant:LPM_CONSTANT_component ;
++--------------------+------------------+-----------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                ;
++--------------------+------------------+-----------------------------------------------------+
+; LPM_WIDTH          ; 4                ; Signed Integer                                      ;
+; LPM_CVALUE         ; 11               ; Signed Integer                                      ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                             ;
+; CBXI_PARAMETER     ; lpm_constant_of6 ; Untyped                                             ;
++--------------------+------------------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX2_1:inst11|lpm_mux:LPM_MUX_component ;
++------------------------+--------------+----------------------------------------------+
+; Parameter Name         ; Value        ; Type                                         ;
++------------------------+--------------+----------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                   ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                 ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                 ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                               ;
+; LPM_WIDTH              ; 4            ; Signed Integer                               ;
+; LPM_SIZE               ; 2            ; Signed Integer                               ;
+; LPM_WIDTHS             ; 1            ; Signed Integer                               ;
+; LPM_PIPELINE           ; 0            ; Untyped                                      ;
+; CBXI_PARAMETER         ; mux_arc      ; Untyped                                      ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                      ;
++------------------------+--------------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: C10:inst8|lpm_constant:LPM_CONSTANT_component ;
++--------------------+------------------+----------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                               ;
++--------------------+------------------+----------------------------------------------------+
+; LPM_WIDTH          ; 4                ; Signed Integer                                     ;
+; LPM_CVALUE         ; 10               ; Signed Integer                                     ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                            ;
+; CBXI_PARAMETER     ; lpm_constant_nf6 ; Untyped                                            ;
++--------------------+------------------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+    Info: Processing started: Sat Jul 04 08:52:50 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off clock_17990425 -c clock_17990425
+Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
+Info (12021): Found 1 design units, including 1 entities, in source file cnt10.v
+    Info (12023): Found entity 1: cnt10
+Info (12021): Found 1 design units, including 1 entities, in source file cnt6.v
+    Info (12023): Found entity 1: cnt6
+Info (12021): Found 1 design units, including 1 entities, in source file clock.bdf
+    Info (12023): Found entity 1: clock
+Info (12021): Found 1 design units, including 1 entities, in source file cnt24.v
+    Info (12023): Found entity 1: cnt24
+Info (12021): Found 1 design units, including 1 entities, in source file scanled.v
+    Info (12023): Found entity 1: scanled
+Info (12021): Found 1 design units, including 1 entities, in source file decode.v
+    Info (12023): Found entity 1: decode
+Info (12021): Found 1 design units, including 1 entities, in source file cnt8.v
+    Info (12023): Found entity 1: cnt8
+Info (12021): Found 1 design units, including 1 entities, in source file c10.v
+    Info (12023): Found entity 1: C10
+Info (12021): Found 1 design units, including 1 entities, in source file c10_2.v
+    Info (12023): Found entity 1: C10_2
+Info (12021): Found 1 design units, including 1 entities, in source file c11.v
+    Info (12023): Found entity 1: C11
+Info (12021): Found 1 design units, including 1 entities, in source file mux2_1.v
+    Info (12023): Found entity 1: MUX2_1
+Info (12021): Found 1 design units, including 1 entities, in source file int_div.v
+    Info (12023): Found entity 1: int_div
+Info (12127): Elaborating entity "clock" for the top level hierarchy
+Info (12128): Elaborating entity "scanled" for hierarchy "scanled:inst5"
+Critical Warning (10169): Verilog HDL warning at scanled.v(5): the port and data declarations for array port "dsel" do not specify the same range for each dimension
+Warning (10359): HDL warning at scanled.v(8): see declaration for object "dsel"
+Warning (10235): Verilog HDL Always Construct warning at scanled.v(13): variable "din" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at scanled.v(14): variable "din" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at scanled.v(15): variable "din" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at scanled.v(16): variable "din" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at scanled.v(17): variable "din" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at scanled.v(18): variable "din" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at scanled.v(19): variable "din" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at scanled.v(20): variable "din" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Info (12128): Elaborating entity "cnt6" for hierarchy "cnt6:inst1"
+Info (12128): Elaborating entity "cnt10" for hierarchy "cnt10:inst"
+Info (12128): Elaborating entity "int_div" for hierarchy "int_div:inst13"
+Info (12128): Elaborating entity "int_div" for hierarchy "int_div:inst12"
+Info (12128): Elaborating entity "cnt24" for hierarchy "cnt24:inst4"
+Warning (10230): Verilog HDL assignment warning at cnt24.v(26): truncated value with size 32 to match size of target (8)
+Info (12128): Elaborating entity "C10_2" for hierarchy "C10_2:inst9"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "C10_2:inst9|lpm_constant:LPM_CONSTANT_component"
+Info (12130): Elaborated megafunction instantiation "C10_2:inst9|lpm_constant:LPM_CONSTANT_component"
+Info (12133): Instantiated megafunction "C10_2:inst9|lpm_constant:LPM_CONSTANT_component" with the following parameter:
+    Info (12134): Parameter "lpm_cvalue" = "10"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "LPM_CONSTANT"
+    Info (12134): Parameter "lpm_width" = "4"
+Info (12128): Elaborating entity "cnt8" for hierarchy "cnt8:inst7"
+Info (12128): Elaborating entity "decode" for hierarchy "decode:inst6"
+Info (12128): Elaborating entity "C11" for hierarchy "C11:inst10"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "C11:inst10|lpm_constant:LPM_CONSTANT_component"
+Info (12130): Elaborated megafunction instantiation "C11:inst10|lpm_constant:LPM_CONSTANT_component"
+Info (12133): Instantiated megafunction "C11:inst10|lpm_constant:LPM_CONSTANT_component" with the following parameter:
+    Info (12134): Parameter "lpm_cvalue" = "11"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "LPM_CONSTANT"
+    Info (12134): Parameter "lpm_width" = "4"
+Info (12128): Elaborating entity "MUX2_1" for hierarchy "MUX2_1:inst11"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "MUX2_1:inst11|lpm_mux:LPM_MUX_component"
+Info (12130): Elaborated megafunction instantiation "MUX2_1:inst11|lpm_mux:LPM_MUX_component"
+Info (12133): Instantiated megafunction "MUX2_1:inst11|lpm_mux:LPM_MUX_component" with the following parameter:
+    Info (12134): Parameter "lpm_size" = "2"
+    Info (12134): Parameter "lpm_type" = "LPM_MUX"
+    Info (12134): Parameter "lpm_width" = "4"
+    Info (12134): Parameter "lpm_widths" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_arc.tdf
+    Info (12023): Found entity 1: mux_arc
+Info (12128): Elaborating entity "mux_arc" for hierarchy "MUX2_1:inst11|lpm_mux:LPM_MUX_component|mux_arc:auto_generated"
+Info (12128): Elaborating entity "C10" for hierarchy "C10:inst8"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "seg[7]" is stuck at VCC
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 159 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 140 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 13 warnings
+    Info: Peak virtual memory: 4648 megabytes
+    Info: Processing ended: Sat Jul 04 08:52:52 2020
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

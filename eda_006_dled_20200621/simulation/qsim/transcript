@@ -1,0 +1,85 @@
+# do dled_17990425.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dled_17990425
+# 
+# Top level modules:
+# 	dled_17990425
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dled_17990425_vlg_sample_tst
+# -- Compiling module dled_17990425_vlg_check_tst
+# -- Compiling module dled_17990425_vlg_vec_tst
+# 
+# Top level modules:
+# 	dled_17990425_vlg_vec_tst
+# vsim -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.dled_17990425_vlg_vec_tst 
+# Loading work.dled_17990425_vlg_vec_tst
+# Loading work.dled_17990425
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading work.dled_17990425_vlg_sample_tst
+# Loading work.dled_17990425_vlg_check_tst
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from dled_17990425_v.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from dled_17990425_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /dled_17990425_vlg_vec_tst File: Waveform.vwf.vt
+# ERROR! Vector Mismatch for output port dig[0] :: @time = 2000000.000 ps
+#      Expected value = 00000000
+#      Real value = 01111111
+# ERROR! Vector Mismatch for output port dig[1] :: @time = 2000000.000 ps
+#      Expected value = 00000000
+#      Real value = 01111111
+# ERROR! Vector Mismatch for output port dig[2] :: @time = 2000000.000 ps
+#      Expected value = 00000000
+#      Real value = 01111111
+# ERROR! Vector Mismatch for output port dig[3] :: @time = 2000000.000 ps
+#      Expected value = 00000000
+#      Real value = 01111111
+# ERROR! Vector Mismatch for output port dig[4] :: @time = 2000000.000 ps
+#      Expected value = 00000000
+#      Real value = 01111111
+# ERROR! Vector Mismatch for output port dig[5] :: @time = 2000000.000 ps
+#      Expected value = 00000000
+#      Real value = 01111111
+# ERROR! Vector Mismatch for output port dig[6] :: @time = 2000000.000 ps
+#      Expected value = 00000000
+#      Real value = 01111111
+# ERROR! Vector Mismatch for output port seg[0] :: @time = 2000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11111001
+# ERROR! Vector Mismatch for output port seg[3] :: @time = 2000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11111001
+# ERROR! Vector Mismatch for output port seg[4] :: @time = 2000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11111001
+# ERROR! Vector Mismatch for output port seg[5] :: @time = 2000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11111001
+# ERROR! Vector Mismatch for output port seg[6] :: @time = 2000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11111001
+# ERROR! Vector Mismatch for output port seg[7] :: @time = 2000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11111001
+# ERROR! Vector Mismatch for output port dig[7] :: @time = 4000000.000 ps
+#      Expected value = 00000000
+#      Real value = 10111111
+# ERROR! Vector Mismatch for output port seg[2] :: @time = 4000000.000 ps
+#      Expected value = 00000000
+#      Real value = 10100100
+# ERROR! Vector Mismatch for output port seg[1] :: @time = 16000000.000 ps
+#      Expected value = 00000000
+#      Real value = 10010010
+#          16 mismatched vectors : Simulation failed !
+# ** Note: $finish    : Waveform.vwf.vt(441)
+#    Time: 100 us  Iteration: 0  Instance: /dled_17990425_vlg_vec_tst/tb_out

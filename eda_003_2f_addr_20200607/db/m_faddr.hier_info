@@ -1,0 +1,237 @@
+|m_faddr8
+CO <= full_addr:inst7.CO
+A[0] => full_addr:inst.A
+A[1] => full_addr:inst1.A
+A[2] => full_addr:inst2.A
+A[3] => full_addr:inst3.A
+A[4] => full_addr:inst4.A
+A[5] => full_addr:inst5.A
+A[6] => full_addr:inst6.A
+A[7] => full_addr:inst7.A
+B[0] => full_addr:inst.B
+B[1] => full_addr:inst1.B
+B[2] => full_addr:inst2.B
+B[3] => full_addr:inst3.B
+B[4] => full_addr:inst4.B
+B[5] => full_addr:inst5.B
+B[6] => full_addr:inst6.B
+B[7] => full_addr:inst7.B
+CIN => full_addr:inst.CIN
+SUM[0] <= full_addr:inst.SUM
+SUM[1] <= full_addr:inst1.SUM
+SUM[2] <= full_addr:inst2.SUM
+SUM[3] <= full_addr:inst3.SUM
+SUM[4] <= full_addr:inst4.SUM
+SUM[5] <= full_addr:inst5.SUM
+SUM[6] <= full_addr:inst6.SUM
+SUM[7] <= full_addr:inst7.SUM
+
+
+|m_faddr8|full_addr:inst7
+SUM <= half_addr:inst1.SUM
+A => half_addr:inst.A
+B => half_addr:inst.B
+CIN => half_addr:inst1.B
+CO <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|m_faddr8|full_addr:inst7|half_addr:inst1
+SUM <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst1.IN1
+CO <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|m_faddr8|full_addr:inst7|half_addr:inst
+SUM <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst1.IN1
+CO <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|m_faddr8|full_addr:inst6
+SUM <= half_addr:inst1.SUM
+A => half_addr:inst.A
+B => half_addr:inst.B
+CIN => half_addr:inst1.B
+CO <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|m_faddr8|full_addr:inst6|half_addr:inst1
+SUM <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst1.IN1
+CO <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|m_faddr8|full_addr:inst6|half_addr:inst
+SUM <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst1.IN1
+CO <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|m_faddr8|full_addr:inst5
+SUM <= half_addr:inst1.SUM
+A => half_addr:inst.A
+B => half_addr:inst.B
+CIN => half_addr:inst1.B
+CO <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|m_faddr8|full_addr:inst5|half_addr:inst1
+SUM <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst1.IN1
+CO <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|m_faddr8|full_addr:inst5|half_addr:inst
+SUM <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst1.IN1
+CO <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|m_faddr8|full_addr:inst4
+SUM <= half_addr:inst1.SUM
+A => half_addr:inst.A
+B => half_addr:inst.B
+CIN => half_addr:inst1.B
+CO <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|m_faddr8|full_addr:inst4|half_addr:inst1
+SUM <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst1.IN1
+CO <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|m_faddr8|full_addr:inst4|half_addr:inst
+SUM <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst1.IN1
+CO <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|m_faddr8|full_addr:inst3
+SUM <= half_addr:inst1.SUM
+A => half_addr:inst.A
+B => half_addr:inst.B
+CIN => half_addr:inst1.B
+CO <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|m_faddr8|full_addr:inst3|half_addr:inst1
+SUM <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst1.IN1
+CO <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|m_faddr8|full_addr:inst3|half_addr:inst
+SUM <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst1.IN1
+CO <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|m_faddr8|full_addr:inst2
+SUM <= half_addr:inst1.SUM
+A => half_addr:inst.A
+B => half_addr:inst.B
+CIN => half_addr:inst1.B
+CO <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|m_faddr8|full_addr:inst2|half_addr:inst1
+SUM <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst1.IN1
+CO <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|m_faddr8|full_addr:inst2|half_addr:inst
+SUM <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst1.IN1
+CO <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|m_faddr8|full_addr:inst1
+SUM <= half_addr:inst1.SUM
+A => half_addr:inst.A
+B => half_addr:inst.B
+CIN => half_addr:inst1.B
+CO <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|m_faddr8|full_addr:inst1|half_addr:inst1
+SUM <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst1.IN1
+CO <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|m_faddr8|full_addr:inst1|half_addr:inst
+SUM <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst1.IN1
+CO <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|m_faddr8|full_addr:inst
+SUM <= half_addr:inst1.SUM
+A => half_addr:inst.A
+B => half_addr:inst.B
+CIN => half_addr:inst1.B
+CO <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|m_faddr8|full_addr:inst|half_addr:inst1
+SUM <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst1.IN1
+CO <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|m_faddr8|full_addr:inst|half_addr:inst
+SUM <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN0
+B => inst.IN1
+B => inst1.IN1
+CO <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+

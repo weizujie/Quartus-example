@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Jun 11 12:40:47 2020
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : m_faddr
+Top-level Entity Name : m_faddr8
+Family : Cyclone IV E
+Total logic elements : 20
+    Total combinational functions : 20
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 26
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

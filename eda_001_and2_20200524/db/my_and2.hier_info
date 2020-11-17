@@ -1,0 +1,6 @@
+|my_and2
+output_3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+input1_1 => inst.IN0
+input2_2 => inst.IN1
+
+

@@ -1,0 +1,8 @@
+vendor_name = ModelSim
+source_file = 1, D:/Code/QuartusProjects/eda_002_half_addr_20200531/half_addr.bdf
+source_file = 1, D:/Code/QuartusProjects/eda_002_half_addr_20200531/db/half_addr.cbx.xml
+design_name = half_addr
+instance = comp, \SUM~output\, SUM~output, half_addr, 1
+instance = comp, \CO~output\, CO~output, half_addr, 1
+instance = comp, \B~input\, B~input, half_addr, 1
+instance = comp, \A~input\, A~input, half_addr, 1

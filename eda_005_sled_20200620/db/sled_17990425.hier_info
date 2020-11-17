@@ -1,0 +1,15 @@
+|decode
+din[0] => Decoder0.IN3
+din[1] => Decoder0.IN2
+din[2] => Decoder0.IN1
+din[3] => Decoder0.IN0
+dout[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+dout[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+dout[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+dout[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+dout[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+dout[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+dout[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+dout[7] <= <VCC>
+
+
